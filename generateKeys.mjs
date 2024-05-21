@@ -7,3 +7,8 @@ function _generatePrivateKey(_hdRootKey, _accountIndex) {
   function _getPublicKey(_privateKey) {
     return getPublicKey(_privateKey);
   }
+
+  export {
+    _generatePrivateKey,
+    _getPublicKey
+  }

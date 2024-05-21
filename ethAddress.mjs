@@ -1,8 +1,8 @@
 import { ec } from "elliptic";
-
+import keccak256 from keccak256;
 const EC = ec;
 
-function _getEthAddress(_publicKey) {
+export function _getEthAddress(_publicKey) {
     const ec = new EC("secp256k1");
     const key = ec.keyFromPublic(_publicKey, "hex");
     const publicKey = key.getPublic().encode("hex").slice(2);

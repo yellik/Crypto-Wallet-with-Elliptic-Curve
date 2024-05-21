@@ -1,9 +1,10 @@
 import { generateMnemonic, mnemonicToEntropy } from 'ethereum-cryptography/bip39';
-import { wordlist, wordlist } from 'ethereum-cryptography/bip39/wordlists/english'
-
+import { wordlist } from 'ethereum-cryptography/bip39/wordlists/english'
+import { _getHDRootKey } from './Hierarchical_deterministic.mjs';
+import { _generatePrivateKey, _getPublicKey } from './generateKeys.mjs';
 const wordlist = wordlist;
 
-function _generateMnemonic() {
+export function _generateMnemonic() {
     const strength = 128;
 
     //generate phrase
