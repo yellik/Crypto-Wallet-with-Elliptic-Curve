@@ -1,8 +1,8 @@
 import hexToBinary from 'hex-to-binary';
 import { it, describe, expect, beforeEach } from 'vitest';
-import { createHash } from '../utilities/crypto-lib.mjs';
+import { createHash } from '../config/';
 import Block from '../models/Block.mjs';
-import { GENESIS_DATA, MINE_RATE } from '../config/settings.mjs';
+import { GENESIS_DATA, MINE_RATE } from '../utilities/crypto-lib.mjs';
 
 describe('Block', () => {
   const timestamp = Date.now();
