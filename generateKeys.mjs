@@ -1,7 +1,7 @@
 import * as secp from '@noble/secp256k1';
 
 function _generatePrivateKey(_hdRootKey, _accountIndex) {
-    return _hdRootKey.deriveChild(_accountIndex).privateKey;
+    return _hdRootKey.deriveChild(_accountIndex).secp.getPublicKey()
   }
 
   function _getPublicKey(_privateKey) {
