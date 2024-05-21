@@ -1,5 +1,5 @@
 {
-  "name": "softcoin",
+  "name": "ecliptic",
   "version": "1.0.0",
   "description": "",
   "main": "server.mjs",
@@ -13,7 +13,7 @@
     "dev-node": "cross-env GENERATE_NODE_PORT='true' nodemon server.mjs"
   },
   "keywords": [],
-  "author": "",
+  "author": "jelena Cefalu",
   "license": "ISC",
   "dependencies": {
     "express": "^4.19.2",
