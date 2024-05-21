@@ -6,9 +6,13 @@ export default class Transaction {
         this.inputMap = this.createInputMap({ sender, outputMap: this.outputMap});
     }
 
-    createOutputMap({ sender, recipient, amunt}) { 
+    createOutputMap({ sender, recipient, amount}) { 
         const outputMap = {}
-        
+
+        outputMap[recipient] = amount;
+        outputMap[sender.publicKey] = sender.balance - amount;
+
+        return outputMap;
     }
 
     createInputMap({ sender, outputMap}) {}
