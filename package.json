@@ -16,8 +16,10 @@
   "author": "jelena Cefalu",
   "license": "ISC",
   "dependencies": {
+    "@noble/secp256k1": "^2.1.0",
     "crypto": "^1.0.1",
     "express": "^4.19.2",
+    "hdkey": "^2.1.0",
     "hex-to-binary": "^1.0.1",
     "keccak256": "^1.0.6",
     "pubnub": "^8.1.0",

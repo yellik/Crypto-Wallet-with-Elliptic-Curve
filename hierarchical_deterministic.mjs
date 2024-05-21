@@ -1,6 +1,5 @@
-import HDKey, { HDKey } from 'ethereum-cryptography/hdkey'
+import HDkey from 'hdkey'
 
-const HDKey = HDKey;
 
 export function _getHDRootKey(_mnemonic){
     return HDKey.fromMasterSeed(_mnemonic);

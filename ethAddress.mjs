@@ -1,5 +1,5 @@
 import { ec } from "elliptic";
-import keccak256 from keccak256;
+import keccak256 from 'js-sha3'
 const EC = ec;
 
 export function _getEthAddress(_publicKey) {
