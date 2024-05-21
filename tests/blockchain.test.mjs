@@ -1,7 +1,7 @@
 import { describe, it, expect, beforeEach } from 'vitest';
 import Block from '../models/Block.mjs';
 import Blockchain from '../models/Blockchain.mjs';
-import { createHash } from '../utilities/crypto-lib.mjs';
+//import { createHash } from '../utilities/crypto-lib.mjs';
 
 describe('Blockchain', () => {
   let blockchain, blockchain2, originalChain;

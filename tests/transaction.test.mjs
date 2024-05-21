@@ -24,7 +24,9 @@ describe('Transaction', () => {
         });
 
         it('should displau the senders balance', () => {
-            expect(transaction.outputMap[sender.publicKey])
+            expect(transaction.outputMap[sender.publicKey]).toEqual(
+                sender.balance - amount
+            )
         })
     })
 })

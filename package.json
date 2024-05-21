@@ -16,6 +16,7 @@
   "author": "jelena Cefalu",
   "license": "ISC",
   "dependencies": {
+    "crypto": "^1.0.1",
     "express": "^4.19.2",
     "hex-to-binary": "^1.0.1",
     "pubnub": "^8.1.0",
